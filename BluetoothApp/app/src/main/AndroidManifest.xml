@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com_sid.example.felix_its.bluetoothapp">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+    <application
+        android:allowBackup="true"
+        android:roundIcon="@drawable/bluetooth6"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PortalActivity"
+            android:label="@string/title_activity_portal"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".DeviceListActivity"
+            android:label="@string/title_other_devices"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".Call"
+            android:label="@string/title_activity_call"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".Chat"
+            android:label="ChatActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Share"
+            android:label="Share"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>
